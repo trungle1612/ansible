@@ -98,6 +98,17 @@ Add the target host:
 server 'your_host_address', user: 'deploy', roles: %w{app db web}
 ```
 
-## Feedback
-
-Feel free to send feedback or report problems via GitHub issues!
+### Define
+- name: This tag specifies the name of than Ansible playbook. As in what this playbook will be doing. Any logical name can be given to the playbook.
+- hosts: This tag specifies the lists of hosts group against which we want to run the task. The hosts field/tag is mandatory. It tells Ansible which hosts to run the listed tasks. The tasks can be run on the same machnie or on a remote machine. One can run the tasks on multiple machines and hence hosts tag can have a group of hosts's entry as well.
+- vars: Vars tag lets you define the variables which you can use in your playbook. Usage is similar to variables in any progarmming language.
+- tasks: All playbooks should contain tasks or a list of task to be executed. Tasks are a list of actions one needs to perform.
+- Roles: Roles provide a framwork for fully independent, or interdependent collections of variables, tasks, files, templates, and modules.
+- variables: In order to use and assign a value to a variable and use that anywhere in the playbook.
+- keywords:
+  + block
+  + name
+  + action
+  + register
+  + always
+  + msg
