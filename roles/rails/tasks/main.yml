@@ -16,11 +16,11 @@
 - name: Copy database.yml
   template: src=database.yml dest={{ deploy_dir }}{{ deploy_app_name }}/shared/config/database.yml owner={{ deploy_user }} group={{ deploy_user }}
 
-- name: Copy puma.rb
-  template: src=puma.rb dest={{ deploy_dir }}{{ deploy_app_name }}/shared/puma.rb owner={{ deploy_user }} group={{ deploy_user }}
+# - name: Copy puma.rb
+#   template: src=puma.rb dest={{ deploy_dir }}{{ deploy_app_name }}/shared/puma.rb owner={{ deploy_user }} group={{ deploy_user }}
 
-- name: Restart Nginx
-  service: name=nginx state=restarted enabled=yes
-
-- name: Ensure Nginx is running
-  service: name=nginx state=started enabled=yes
+# - name: Restart Nginx
+#   service: name=nginx state=restarted enabled=yes
+#
+# - name: Ensure Nginx is running
+#   service: name=nginx state=started enabled=yes
