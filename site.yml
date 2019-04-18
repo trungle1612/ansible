@@ -4,10 +4,9 @@
 - name: Install Rails Server
   hosts: webservers
   # After initial provisioning, use deploy instead of root
-  remote_user: root
-  # remote_user: deploy
-  # become: yes
-  # become_method: sudo
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
   gather_facts: no # don't gather facts because /usr/bin/python isn't set
   pre_tasks:
     - name: apt-get update
@@ -23,6 +22,7 @@
     - nginx
     - certbot
     - ruby
+    - rbenv
     - rails
     - monit
     - memcached
