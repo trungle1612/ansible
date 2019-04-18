@@ -54,6 +54,13 @@ rails_secret_key_base: SET_RAILS_SECRET_KEY_BASE_HERE
 # Monit
 monit_sidekiq_enabled: true
 
+# Ruby
+ruby_install_version: 0.6.1
+chruby_version: 0.3.9
+ruby_version: 2.5.3
+rbenv_ruby_build: true
+rbenv_ruby_make_opts: '-j 2'
+
 # rbenv
 rbenv_default: 2.4.1
 
