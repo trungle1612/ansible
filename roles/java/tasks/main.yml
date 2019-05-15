@@ -1,0 +1,14 @@
+- name: add repo for java
+  apt_repository: repo='ppa:linuxuprising/java' state=present
+
+# - name: set licence selected
+#   shell: /bin/echo debconf shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
+#   sudo: yes
+#
+# - name: set licence seen
+#   shell: /bin/echo debconf shared/accepted-oracle-license-v1-1 seen true | /usr/bin/debconf-set-selections
+#   sudo: yes
+#
+- name: install default jdk
+  apt: name=default-jdk
+  sudo: yes

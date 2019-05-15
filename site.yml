@@ -19,9 +19,10 @@
     - common
     - deploy-user
     - mysql
+    - java
     - nginx
-    - certbot
-    - ruby
+    - elastic-search
+    # - certbot
     - rbenv
     - rails
     - monit

@@ -19,6 +19,8 @@ Use this ansible playbook to setup a fresh server with the following components:
 * Swapfile (useful for small DO instances)
 * Locales
 * Tools (tmux, vim, htop, git, wget, curl etc.)
+* java
+* elastic-search
 
 ## Prerequisites & Config
 
